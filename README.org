@@ -1,0 +1,36 @@
+* A basic template for CPP programming
+
+** Intended Usage
+
+1. Clone or copy this repo when creating a new project.
+2. Configure the repository to your preferences as necessary.
+3. Write code.
+4. Build with ~make~.
+
+** File structure
++ ~include/~
+  Place header files in this folder.
+
++ ~lib/~
+  Third-party libraries can be added here.
+
++ ~src/~
+  Program code should be placed here.
+
++ ~tests/~
+  Test code should be placed here.
+
++ ~.gitignore~
+  By default, object and binary files are ignored.
+
++ ~.clang-format~
+  Configuration file for ~Clang-Format~; more configuration info [[https://clang.llvm.org/docs/ClangFormatStyleOptions.html][here]].
+  Can be deleted if you don't use that tool.
+
++ ~compile_flags.txt~
+  This file tells ~clangd~ what's going on in the project, including where to find the header files.
+  Can be deleted if you don't use that tool.
+
++ ~Makefile~
+  Relatively generic Makefile, tailored to the folder structure as detailed by this readme. By default, running ~make~ in the project root will build a program called ~example~ in the ~bin/~ folder, but you'll most likely want to give it a better name than that.
+  A separate rule for making a test program is provided via ~make unit~. An example workflow for unit testing would be to place ~catch.hpp~ in the ~lib/~ folder, your tests in ~tests/~ and compiling and running the tests via ~make unit && ./bin/unit~.

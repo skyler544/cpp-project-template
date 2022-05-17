@@ -1,0 +1,4 @@
+--language=c++
+-Iinclude
+-Ilib
+-std=c++20
