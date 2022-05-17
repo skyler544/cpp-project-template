@@ -1,4 +1,4 @@
-* A basic template for CPP programming
+* A basic template for C++ programming
 
 ** Intended Usage
 
@@ -33,4 +33,7 @@
 
 + ~Makefile~
   Relatively generic Makefile, tailored to the folder structure as detailed by this readme. By default, running ~make~ in the project root will build a program called ~example~ in the ~bin/~ folder, but you'll most likely want to give it a better name than that.
+
   A separate rule for making a test program is provided via ~make unit~. An example workflow for unit testing would be to place ~catch.hpp~ in the ~lib/~ folder, your tests in ~tests/~ and compiling and running the tests via ~make unit && ./bin/unit~.
+
+  Catch2, a C++ unit testing framework: https://github.com/catchorg/Catch2
